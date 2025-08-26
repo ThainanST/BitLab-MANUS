@@ -1,39 +1,38 @@
 # BitLab-MANUS  
-**Motion-capture ARduino Neural Unified System**  
+**Motion-capture ARduino Neural Unified System**
 
-> Projeto de mão robótica controlada por captura de movimento.  
-> Desenvolvido pelo **BitLab – UFOP** para fins didáticos e de divulgação científica.  
-
----
-
-## 📖 Introdução  
-O **BitLab-MANUS** é um sistema que combina **visão computacional, microcontroladores e robótica** para criar uma mão mecânica biomimética.  
-
-📸 Uma câmera capta os movimentos da mão humana.  
-🧠 Algoritmos interpretam os gestos em tempo real.  
-🤖 Um Arduino controla servomotores que replicam os movimentos na mão robótica.  
-
-Este projeto busca aproximar estudantes e visitantes do universo da **engenharia eletrônica e da robótica**, unindo conceitos modernos de tecnologia em uma aplicação interativa.  
+Projeto de mão robótica controlada por gestos, combinando visão computacional com Arduino. Desenvolvido no BitLab/UFOP para fins didáticos e de extensão.
 
 ---
 
-## ⚙️ Tecnologias Utilizadas  
-- **Hardware**: Arduino, servomotores, câmera USB  
-- **Software**: Python (OpenCV, MediaPipe), C/C++ para Arduino  
-- **Integração**: Comunicação serial entre PC e microcontrolador  
-- **Estrutura**: Impressão 3D para a mão mecânica  
+## 🎯 Objetivo
+
+Capturar, interpretar e replicar em tempo real os movimentos da mão humana em uma mão robótica, utilizando:
+
+- Visão computacional com detecção de pontos-chave da mão
+- Comunicação serial com Arduino
+- Servomotores para replicação física
 
 ---
 
-## 🚀 Como Rodar  
+## ⚙️ Tecnologias Utilizadas
 
-### Pré-requisitos  
-- Python 3.10+  
-- Arduino IDE  
-- Bibliotecas: `opencv-python`, `mediapipe`, `pyserial`  
+- **Python (PC/Host)**: OpenCV, NumPy, rede neural (Caffe)
+- **Arduino**: controle dos servos
+- **Modelo de detecção de mão**:  
+  - `pose_iter_102000.caffemodel`  
+  - `pose_deploy.prototxt`
 
-### Passos  
-1. Clone este repositório:  
-   ```bash
-   git clone https://github.com/<seu-usuario>/BitLab-MANUS.git
-   cd BitLab-MANUS
+---
+
+## ⚠️ Sobre os Arquivos de Modelo
+
+Por limitação do GitHub (100 MB), os arquivos `.caffemodel` e `.prototxt` **não estão inclusos no repositório**.
+
+Você pode baixá-los aqui:  
+🔗 https://drive.google.com/drive/folders/1FFQdfEqxwK0icTlshhNu0BgmZC7mejmO?usp=sharing
+
+**Após o download**, coloque os arquivos na pasta:
+
+```bash
+src/host/hand/
