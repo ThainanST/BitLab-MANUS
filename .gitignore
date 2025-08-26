@@ -1,2 +1,42 @@
-# Arquivos de modelo muito grandes
-src/host/hand/pose_iter_102000.caffemodelsrc/host/hand/pose_iter_102000.caffemodel
+# === Modelos grandes (pesos de rede neural) ===
+*.caffemodel
+*.prototxt
+
+# === Vídeos gerados ===
+*.avi
+*.mp4
+
+# === Arquivos de log e saída ===
+*.log
+*.txt
+output.*
+
+# === Ambientes virtuais (Python) ===
+.venv/
+venv/
+env/
+__pycache__/
+*.pyc
+
+# === Arduino build intermediários (opcional) ===
+*.elf
+*.hex
+*.bin
+*.eep
+
+# === IDEs e editores ===
+.vscode/
+.idea/
+
+# === Sistema operacional ===
+.DS_Store
+Thumbs.db
+
+# === Arquivos de teste e datasets locais ===
+datasets/
+recordings/
+captures/
+
+# === Arquivos temporários ===
+*.bak
+*.tmp
