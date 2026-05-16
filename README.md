@@ -34,5 +34,9 @@ Você pode baixá-los aqui:
 
 **Após o download**, coloque os arquivos na pasta:
 
+Alteração - Thainan
+
+
 ```bash
 src/host/hand/
+
